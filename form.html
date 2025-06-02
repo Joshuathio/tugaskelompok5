@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="form2.css">
+</head>
+<body>
+    <!-- Back Button -->
+    <button class="back-btn" onclick="goBack()">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+    </button>
+
+    <div class="signup-container">
+        <div class="left-panel">
+            <h2>Welcome Back!</h2>
+            <p>To keep connected with us please login with your personal info</p>
+            <button class="login-btn">LOG IN</button>
+        </div>
+        
+        <div class="right-panel">
+            <h2>Create Account</h2>
+            
+            <div class="social-container">
+                <button class="social-btn">f</button>
+                <button class="social-btn">G+</button>
+                <button class="social-btn">in</button>
+            </div>
+            
+            <form id="signupForm">
+                <!-- Name Input -->
+                <div class="form-group">
+                    <span class="icon">👤</span>
+                    <input type="text" class="form-control" id="name" placeholder="Name">
+                    <span class="error-message">Name is required</span>
+                </div>
+                
+                <!-- Email Input -->
+                <div class="form-group">
+                    <span class="icon">✉</span>
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                    <span class="error-message">Please enter a valid email</span>
+                </div>
+                
+                <!-- Password Input -->
+                <div class="form-group">
+                    <span class="icon">🔒</span>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                    <span class="error-message">Password must be at least 6 characters</span>
+                </div>
+                
+                <button type="submit" class="signup-btn">SIGN UP</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="form2.js"></script>
+</body>
+</html>

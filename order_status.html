@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDL - Pusat Kebutuhan Akuarium</title>
+    <link rel="stylesheet" href="order_status.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="menu-icon">☰</div>
+            <div class="top-info">Produk Aquarium No. 1 di Indonesia - Life is better Underwater</div>
+        </div>
+        
+        <!-- Header -->
+        <div class="header">
+            <img src="images/image-1-16.png" class="logo">
+            
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Cari produk di sini...">
+                <button class="search-btn"><img src="imagehci/Search.svg" alt=""></button>
+            </div>
+            
+            <div class="user-account">
+                <button class="cart-btn"><img src="images/vector-19.svg"></button>
+                <div class="icon"><p>Doremonsad88</p><img src="images/profile-18.png"></div>
+                
+            </div>
+        </div>
+        
+        <!-- Navigation Menu -->
+        <div class="nav-menu">
+            <a href="#" class="nav-item">Semua</a>
+            <a href="#" class="nav-item">Belum Bayar</a>
+            <a href="#" class="nav-item">Dikermas</a>
+            <a href="#" class="nav-item active">Dikirim</a>
+            <a href="#" class="nav-item">Selesai</a>
+            <a href="#" class="nav-item">Dibatalkan</a>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="content grid-layout">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="user-profile">
+                    <div class="profile-image">
+                        <img src="images/profile-18.png " alt="User Profile">
+                    </div>
+                    <strong>Doremonssad88</strong>
+                    <small>Mobil Tachi</small>
+                </div>
+                
+                <div class="sidebar-menu">
+                    <a href="#" class="sidebar-item">Akun Saya</a>
+                    <a href="#" class="sidebar-item">Pesanan Saya</a>
+                    <a href="#" class="sidebar-item">Notifikasi</a>
+                    <a href="#" class="sidebar-item">Voucher Tersedia</a>
+                </div>
+            </div>
+            
+            <!-- Product Content -->
+            <div class="main-content">
+                <div class="product-card">
+                    <div class="product-info">
+                        <div class="gambar-text">
+                            <img src="images/image-52-38.png" alt="Product">
+                            <h3 class="product-title">3 Rumah Kincir Aksesoris Aquarium</h3>
+                            <div class="product-meta">Variasi: Sama seperti Foto</div>
+                            <div class="product-meta">x1</div>
+                            <div class="product-price">Rp165,000</div>
+                            <div class="product-date">18 Mei 2025</div>
+                            <div class="product-availability">Sudah dibayar</div>
+                        <div>
+                        
+                        <a href="#" class="btn btn-secondary">Rincian Pembayaran</a>
+                        <a href="#" class="btn btn-primary">Lacak Pengiriman</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Side Menu (initially hidden) -->
+    <div class="side-menu" id="sideMenu">
+        <div class="side-menu-header">
+            <span>Menu</span>
+            <button class="close-menu-btn" onclick="toggleMenu()">&times;</button>
+        </div>
+        <div class="side-menu-content">
+            <a href="#" class="menu-item">
+                <span class="menu-icon">🏠</span>
+                Beranda
+            </a>
+            <a href="#" class="menu-item">
+                <span class="menu-icon">🛒</span>
+                Keranjang
+            </a>
+            <a href="#" class="menu-item">
+                <span class="menu-icon">📋</span>
+                Pesanan Saya
+            </a>
+            <a href="#" class="menu-item">
+                <span class="menu-icon">❤️</span>
+                Favorit
+            </a>
+            <a href="#" class="menu-item">
+                <span class="menu-icon">👤</span>
+                Akun Saya
+            </a>
+        </div>
+    </div>
+    
+    <div class="menu-overlay" id="menuOverlay" onclick="toggleMenu()"></div>
+    
+    <script>
+        function toggleMenu() {
+            const sideMenu = document.getElementById('sideMenu');
+            const menuOverlay = document.getElementById('menuOverlay');
+            
+            sideMenu.classList.toggle('open');
+            menuOverlay.classList.toggle('open');
+        }
+        
+        // Open menu when clicking menu icon
+        document.querySelector('.menu-icon').addEventListener('click', toggleMenu);
+    </script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header Styles */
+.header {
+    background-color: #e53e3e;
+    color: white;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    color: #555555;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.header-text {
+    font-size: 14px;
+    font-weight: 500;
+    /* text-align: right; */
+}
+
+/* Navigation Styles */
+.navbar {
+    background-color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-btn {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 8px 15px;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.page-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    flex: 1;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.username {
+    font-size: 14px;
+    color: #666;
+}
+
+.avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+}
+
+/* Main Content */
+.main-content {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.breadcrumb {
+    margin-bottom: 30px;
+}
+
+.back-link {
+    color: #e53e3e;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Payment Card */
+.payment-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e5e5;
+}
+
+.payment-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.payment-tempo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    /* border-bottom: 1px solid #f0f0f0; */
+}
+
+.payment-row:last-of-type {
+    border-bottom: none;
+}
+
+.label {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+.amount {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e53e3e;
+}
+
+.due-date {
+    font-size: 18px;
+    color: #e53e3e;
+    font-weight: bold;
+}
+
+.payment-method {
+    display: flex;
+    align-items: center;
+}
+
+.gopay-logo {
+    height: 50px;
+    border: 1px solid #e53e3e;
+    padding: 5px 10px;
+    background-color: white;
+}
+
+/* Guarantee Text */
+.guarantee-text {
+    margin: 30px 0;
+    text-align: left;
+    color: #888;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.guarantee-text p {
+    margin: 5px 0;
+}
+
+/* Confirm Button */
+.confirm-btn {
+    width: 100%;
+    background-color: #e53e3e;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.confirm-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Help Button */
+.help-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.help-btn {
+    background-color: white;
+    border: 2px solid #e53e3e;
+    color: #e53e3e;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.help-btn:hover {
+    background-color: #e53e3e;
+    color: white;
+}
+
+.help-icon {
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 15px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .page-title {
+        font-size: 24px;
+    }
+    
+    .payment-card {
+        padding: 25px;
+        margin: 20px 10px;
+    }
+    
+    .payment-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .help-button {
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .help-btn {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+}
