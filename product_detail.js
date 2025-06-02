@@ -1,7 +1,7 @@
  document.querySelector('.buy-now').addEventListener('click', function() {
             alert('Pembelian berhasil diproses! Mengarahkan ke halaman checkout...');
            
-            window.location.href = '/checkout.html';
+            window.location.href = 'checkout.html';
         });
         
         // Add to Cart button functionality

@@ -317,9 +317,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #555;
+    color:white;
 }
-
+.menu-icon svg{
+    color: black;
+}
 .grid-layout {
     display: grid;
     grid-template-columns: 200px 1fr;

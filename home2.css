@@ -29,6 +29,10 @@
         .menu-icon {
             font-size: 24px;
             cursor: pointer;
+            color:white;
+        }
+        .menu-icon svg{
+            color: black;
         }
         
         .top-info {
@@ -568,9 +572,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #555;
+            color: white;
         }
-        
+        .menu-icon svg{
+            color: black;
+        }
         .menu-overlay {
             position: fixed;
             top: 0;

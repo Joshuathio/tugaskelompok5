@@ -32,8 +32,17 @@
     .menu-icon {
         font-size: 24px;
         cursor: pointer;
-        color: black;
     }
+.menu-icon {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+.menu-icon svg{
+    color: black;
+}
 
     .top-info {
         font-size: 12px;
