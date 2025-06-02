@@ -591,6 +591,32 @@
         .menu-overlay.open {
             display: block;
         }
+           .customer-service {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: white;
+        border: 1px solid red;
+        border-radius: 20px;
+        padding: 8px 15px;
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        cursor: pointer;
+        transition: background-color 0.2s, transform 0.2s;
+    }
+
+    .customer-service:hover {
+        background-color: #f9f9f9;
+        transform: translateY(-2px);
+    }
+
+    .customer-service-icon {
+        width: 16px;
+        height: 16px;
+        margin-left: 5px;
+    }
         
         /* Responsive adjustments */
         @media (min-width: 1200px) {
