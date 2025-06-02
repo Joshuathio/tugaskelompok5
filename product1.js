@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 id: productNumber,
                 image: 'image 46.png',
                 name: type === 'bestseller' ? `Bestseller Premium Putih ${productNumber}` : `Aquarium LED Putih ${productNumber}`,
-                price: type === 'bestseller' ? 250000 : 200000,
+                price: type === 'bestseller' ? 150000 : 150000,
                 discount: type === 'bestseller' ? '30%' : '50%'
             };
             
@@ -203,7 +203,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
             <div class="product-info">
                 <div class="product-name">${product.name}</div>
-                <div class="product-price">Rp${formatPrice(product.price)}</div>
+                <div class="product-price">Rp ${formatPrice(product.price)}</div>
                 <a href="#" class="cart-link">Cart</a>
             </div>
         `;

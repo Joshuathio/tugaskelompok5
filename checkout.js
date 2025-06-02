@@ -2,7 +2,7 @@
         document.querySelector('.checkout-btn').addEventListener('click', function() {
             alert('Pesanan berhasil dibuat! Terima kasih telah berbelanja.');
            
-            window.location.href = '/payment.html';
+            window.location.href = 'payment.html';
         });
         
         // Payment method selection
