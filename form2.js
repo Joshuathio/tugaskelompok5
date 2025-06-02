@@ -128,6 +128,6 @@
                 window.history.back();
             } else {
                 // Jika tidak ada history, redirect ke halaman home atau login
-                window.location.href = 'home.html'; // Ganti dengan URL yang sesuai
+                window.location.href = 'index.html'; // Ganti dengan URL yang sesuai
             }
         }
