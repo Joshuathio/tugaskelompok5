@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout - Ocean Decoration Lab</title>
     
- <link rel="stylesheet" href="checkout.css">
+<link rel="stylesheet" href="checkout.css">
 </head>
 <body>
+    <!-- Side Menu -->
     <div class="side-menu" id="sideMenu">
         <div class="side-menu-header">
             <span>Menu</span>
@@ -16,7 +17,9 @@
         <div class="side-menu-content">
             <a href="index.html" class="menu-item">
                 <div class="menu-icon">
-                   <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Navigation / House_01"> <path id="Vector" d="M20 17.0002V11.4522C20 10.9179 19.9995 10.6506 19.9346 10.4019C19.877 10.1816 19.7825 9.97307 19.6546 9.78464C19.5102 9.57201 19.3096 9.39569 18.9074 9.04383L14.1074 4.84383C13.3608 4.19054 12.9875 3.86406 12.5674 3.73982C12.1972 3.63035 11.8026 3.63035 11.4324 3.73982C11.0126 3.86397 10.6398 4.19014 9.89436 4.84244L5.09277 9.04383C4.69064 9.39569 4.49004 9.57201 4.3457 9.78464C4.21779 9.97307 4.12255 10.1816 4.06497 10.4019C4 10.6506 4 10.9179 4 11.4522V17.0002C4 17.932 4 18.3978 4.15224 18.7654C4.35523 19.2554 4.74432 19.6452 5.23438 19.8482C5.60192 20.0005 6.06786 20.0005 6.99974 20.0005C7.93163 20.0005 8.39808 20.0005 8.76562 19.8482C9.25568 19.6452 9.64467 19.2555 9.84766 18.7654C9.9999 18.3979 10 17.932 10 17.0001V16.0001C10 14.8955 10.8954 14.0001 12 14.0001C13.1046 14.0001 14 14.8955 14 16.0001V17.0001C14 17.932 14 18.3979 14.1522 18.7654C14.3552 19.2555 14.7443 19.6452 15.2344 19.8482C15.6019 20.0005 16.0679 20.0005 16.9997 20.0005C17.9316 20.0005 18.3981 20.0005 18.7656 19.8482C19.2557 19.6452 19.6447 19.2554 19.8477 18.7654C19.9999 18.3978 20 17.932 20 17.0002Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
+                    <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 17.0002V11.4522C20 10.9179 19.9995 10.6506 19.9346 10.4019C19.877 10.1816 19.7825 9.97307 19.6546 9.78464C19.5102 9.57201 19.3096 9.39569 18.9074 9.04383L14.1074 4.84383C13.3608 4.19054 12.9875 3.86406 12.5674 3.73982C12.1972 3.63035 11.8026 3.63035 11.4324 3.73982C11.0126 3.86397 10.6398 4.19014 9.89436 4.84244L5.09277 9.04383C4.69064 9.39569 4.49004 9.57201 4.3457 9.78464C4.21779 9.97307 4.12255 10.1816 4.06497 10.4019C4 10.6506 4 10.9179 4 11.4522V17.0002C4 17.932 4 18.3978 4.15224 18.7654C4.35523 19.2554 4.74432 19.6452 5.23438 19.8482C5.60192 20.0005 6.06786 20.0005 6.99974 20.0005C7.93163 20.0005 8.39808 20.0005 8.76562 19.8482C9.25568 19.6452 9.64467 19.2555 9.84766 18.7654C9.9999 18.3979 10 17.932 10 17.0001V16.0001C10 14.8955 10.8954 14.0001 12 14.0001C13.1046 14.0001 14 14.8955 14 16.0001V17.0001C14 17.932 14 18.3979 14.1522 18.7654C14.3552 19.2555 14.7443 19.6452 15.2344 19.8482C15.6019 20.0005 16.0679 20.0005 16.9997 20.0005C17.9316 20.0005 18.3981 20.0005 18.7656 19.8482C19.2557 19.6452 19.6447 19.2554 19.8477 18.7654C19.9999 18.3978 20 17.932 20 17.0002Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                 </div>
                 <span>Home</span>
             </a>
@@ -43,26 +46,25 @@
         </div>
     </div>
 
-    <!-- Overlay for menu background - NEW ADDITION -->
-    <div class="menu-overlay" id="menuOverlay" onclick="closeMenu()"></div>
+    <!-- Overlay for menu background -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+    
     <div class="container">
-       <div class="top-bar">
+        <div class="top-bar">
             <div class="menu-icon">☰</div>
             <div class="top-info">Pacific Aquarium No. 1 di Indonesia - Life is better Underwater</div>
         </div>
-         <button class="back-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-        </svg>
-    </button>
+        
+        <button class="back-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+        </button>
         
         <!-- Header -->
         <div class="header">
             <img src="image 1.png" alt="Ocean Decoration Lab" class="logo">
             <div class="page-title">CHECKOUT</div>
-            <!-- <div class="recommended">
-                <img src="/api/placeholder/24/24" alt="Recommended" style="width: 24px; height: 24px;">
-            </div> -->
         </div>
         
         <!-- Checkout Content -->
@@ -133,35 +135,44 @@
             <div class="section payment-section">
                 <div class="payment-title">Metode Pembayaran</div>
                 <div class="payment-methods">
-                    <div class="payment-method">
+                    <div class="payment-method" data-method="bca">
                         <img src="bca-bank-central-asia-logo-svgrepo-com.png" alt="BCA">
                     </div>
-                    <div class="payment-method">
+                    <div class="payment-method" data-method="visa">
                         <img src="visa-svgrepo-com.png" alt="VISA">
                     </div>
-                    <div class="payment-method">
+                    <div class="payment-method" data-method="mastercard">
                         <img src="mastercard-full-svgrepo-com.png" alt="Mastercard">
                     </div>
-                    <div class="payment-method">
+                    <div class="payment-method" data-method="paypal">
                         <img src="paypal-svgrepo-com.png" alt="PayPal">
                     </div>
-                    <div class="payment-method">
+                    <div class="payment-method" data-method="bni">
                         <img src="bank-bni-logo-png_seeklogo-355606.png" alt="BNI">
                     </div>
-                    <div class="payment-method">
+                    <div class="payment-method" data-method="gopay">
                         <img src="images.png" alt="GoPay">
                     </div>
+                </div>
+                
+                <div class="payment-error" id="paymentError">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="12"></line>
+                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                    </svg>
+                    <span>Silakan pilih metode pembayaran terlebih dahulu</span>
                 </div>
                 
                 <!-- Summary Section -->
                 <div class="summary-section">
                     <div class="summary-row">
                         <div class="summary-label">Total (1 barang):</div>
-                        <div class="summary-value">Rp150,000</div>
+                        <div class="summary-value">Rp150.000</div>
                     </div>
                     <div class="total-row">
                         <div class="total-label">Total Dibayar:</div>
-                        <div class="total-value">Rp150,000</div>
+                        <div class="total-value">Rp150.000</div>
                     </div>
                     <div class="checkout-note">
                         PPN sudah termasuk (jika berlaku)
@@ -173,60 +184,13 @@
         </div>
     </div>
     
-    <!-- Side Menu -->
-    <div class="side-menu" id="sideMenu">
-        <div class="side-menu-header">
-            <span>Menu</span>
-            <button class="close-menu-btn" id="closeMenuBtn">×</button>
-        </div>
-        <div class="side-menu-content">
-            <a href="#" class="menu-item">
-                <div class="menu-icon">🏠</div>
-                <div>Beranda</div>
-            </a>
-            <a href="#" class="menu-item">
-                <div class="menu-icon">🛒</div>
-                <div>Kategori Produk</div>
-            </a>
-            <a href="#" class="menu-item">
-                <div class="menu-icon">💖</div>
-                <div>Wishlist</div>
-            </a>
-            <a href="#" class="menu-item">
-                <div class="menu-icon">🔥</div>
-                <div>Promo</div>
-            </a>
-            <a href="#" class="menu-item">
-                <div class="menu-icon">📦</div>
-                <div>Pesanan Saya</div>
-            </a>
-            <a href="#" class="menu-item">
-                <div class="menu-icon">🔔</div>
-                <div>Notifikasi</div>
-            </a>
-            <a href="#" class="menu-item">
-                <div class="menu-icon">⭐</div>
-                <div>Ulasan</div>
-            </a>
-            <a href="#" class="menu-item">
-                <div class="menu-icon">👤</div>
-                <div>Akun Saya</div>
-            </a>
-            <a href="#" class="menu-item">
-                <div class="menu-icon">❓</div>
-                <div>Bantuan</div>
-            </a>
-        </div>
-    </div>
-    <div class="menu-overlay" id="menuOverlay"></div>
-    
     <!-- Customer Service Float -->
     <div class="customer-service">
-        Butuh Bantuan? <span class="customer-service-icon"> <img src="Frame.png" class="customer-service-icon"></span>
+        Butuh Bantuan? 
+     <img src="Frame.png" alt="">
+        </svg>
     </div>
-    
-   
-    <script type="module" src="home1.js"></script>
-    <script type="module" src="checkout.js"></script>
+    <script src="home1.js"></script>
+  <script src="checkout.js"></script>
 </body>
 </html>

@@ -25,6 +25,9 @@
             justify-content: space-between;
             align-items: center;
         }
+        .menu-item:hover {
+            color: #e63946;
+        }
         
         .menu-icon {
             font-size: 24px;

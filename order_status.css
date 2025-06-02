@@ -172,6 +172,9 @@ body {
     text-decoration: none;
     display: block;
 }
+.menu-item:hover {
+        color: #e63946;
+    }
 
 /* Content area */
 .content {
@@ -312,6 +315,7 @@ body {
     color: #333;
     transition: background-color 0.2s;
 }
+
 
 .menu-item:hover {
     background-color: #f0f0f0;
