@@ -149,7 +149,7 @@
             flex-direction: row;
             align-items: center;
             padding: 5px 10px;
-            border: 1px solid #DFDFDF;
+            /* border: 1px solid #DFDFDF; */
             border-radius: 10px;
             cursor: pointer;
             transition: all 0.3s;
@@ -438,9 +438,9 @@
             transition: all 0.3s;
         }
 
-        .close-menu-btn:hover {
+        /* .close-menu-btn:hover {
             transform: rotate(90deg);
-        }
+        } */
 
         .side-menu-content {
             padding: 10px 0;
@@ -577,7 +577,8 @@
             .user-account {
                 order: 2;
             }
-
+            
+            
             .icon p {
                 display: none;
             }

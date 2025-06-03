@@ -142,6 +142,29 @@ document.addEventListener('DOMContentLoaded', function() {
                 initProductSlider('recommended');
                 initProductSlider('best-selling');
             }, 100);
+       document.querySelector('.customer-service').addEventListener('click', function() {
+            showToast('Customer service akan segera membantu Anda!', 'success');
+        });
+        function showToast(message, type = 'success') {
+            // Remove existing toast if any
+            const existingToast = document.querySelector('.toast-notification');
+            if(existingToast) {
+                existingToast.remove();
+            }
+            
+            // Create toast element
+            const toast = document.createElement('div');
+            toast.className = 'toast-notification';
+            toast.classList.add(type);
+            toast.textContent = message;
+            
+            document.body.appendChild(toast);
+            
+            // Remove toast after animation
+            setTimeout(() => {
+                toast.remove();
+            }, 3000);
+        }
             
             // Menu functionality
             const menuIcon = document.querySelector('.top-bar .menu-icon');
