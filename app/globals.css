@@ -1,0 +1,126 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated theme colors to match Jobie interface - light theme with purple accents */
+  --background: oklch(0.98 0.005 280);
+  --foreground: oklch(0.15 0.02 280);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.15 0.02 280);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.15 0.02 280);
+  --primary: oklch(0.55 0.18 280);
+  --primary-foreground: oklch(0.98 0.005 280);
+  --secondary: oklch(0.96 0.01 280);
+  --secondary-foreground: oklch(0.15 0.02 280);
+  --muted: oklch(0.96 0.01 280);
+  --muted-foreground: oklch(0.45 0.02 280);
+  --accent: oklch(0.94 0.02 280);
+  --accent-foreground: oklch(0.15 0.02 280);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.98 0.005 280);
+  /* Made border more visible with darker color and increased contrast */
+  --border: oklch(0.85 0.02 280);
+  --input: oklch(0.88 0.02 280);
+  --ring: oklch(0.55 0.18 280);
+  --chart-1: oklch(0.55 0.18 280);
+  --chart-2: oklch(0.65 0.15 320);
+  --chart-3: oklch(0.45 0.12 240);
+  --chart-4: oklch(0.75 0.12 200);
+  --chart-5: oklch(0.85 0.08 160);
+  --radius: 0.75rem;
+  --sidebar: oklch(0.98 0.005 280);
+  --sidebar-foreground: oklch(0.15 0.02 280);
+  --sidebar-primary: oklch(0.55 0.18 280);
+  --sidebar-primary-foreground: oklch(0.98 0.005 280);
+  --sidebar-accent: oklch(0.96 0.01 280);
+  --sidebar-accent-foreground: oklch(0.15 0.02 280);
+  --sidebar-border: oklch(0.92 0.01 280);
+  --sidebar-ring: oklch(0.55 0.18 280);
+}
+
+.dark {
+  /* Updated to modern dark theme with exact hex colors provided */
+  --background: #0f1115; /* Background: #0F1115 */
+  --foreground: #ffffff; /* Primary Text: #FFFFFF */
+  --card: #1a1d23; /* Card Background: #1A1D23 */
+  --card-foreground: #ffffff; /* Primary Text: #FFFFFF */
+  --popover: #1a1d23; /* Card Background: #1A1D23 */
+  --popover-foreground: #ffffff; /* Primary Text: #FFFFFF */
+  --primary: #7c3aed; /* Accent (Primary Action, Highlights): #7C3AED */
+  --primary-foreground: #ffffff; /* Primary Text: #FFFFFF */
+  --secondary: #2c2f36; /* Border/Divider: #2C2F36 */
+  --secondary-foreground: #ffffff; /* Primary Text: #FFFFFF */
+  --muted: #2c2f36; /* Border/Divider: #2C2F36 */
+  --muted-foreground: #a0a3a9; /* Secondary Text: #A0A3A9 */
+  --accent: #1a1d23; /* Card Background: #1A1D23 */
+  --accent-foreground: #ffffff; /* Primary Text: #FFFFFF */
+  --destructive: #ef4444; /* Error: #EF4444 */
+  --destructive-foreground: #ffffff; /* Primary Text: #FFFFFF */
+  /* Made dark mode borders more visible with lighter colors */
+  --border: #3a3d44; /* Lighter than original #2C2F36 for better visibility */
+  --input: #2c2f36; /* Border/Divider: #2C2F36 */
+  --ring: #7c3aed; /* Accent (Primary Action, Highlights): #7C3AED */
+  --chart-1: #7c3aed; /* Accent (Primary Action, Highlights): #7C3AED */
+  --chart-2: #9f67f6; /* Accent Hover: #9F67F6 */
+  --chart-3: #22c55e; /* Success/Positive: #22C55E */
+  --chart-4: #eab308; /* Warning: #EAB308 */
+  --chart-5: #ef4444; /* Error: #EF4444 */
+  --sidebar: #1a1d23; /* Card Background: #1A1D23 */
+  --sidebar-foreground: #ffffff; /* Primary Text: #FFFFFF */
+  --sidebar-primary: #7c3aed; /* Accent (Primary Action, Highlights): #7C3AED */
+  --sidebar-primary-foreground: #ffffff; /* Primary Text: #FFFFFF */
+  --sidebar-accent: #2c2f36; /* Border/Divider: #2C2F36 */
+  --sidebar-accent-foreground: #a0a3a9; /* Secondary Text: #A0A3A9 */
+  --sidebar-border: #2c2f36; /* Border/Divider: #2C2F36 */
+  --sidebar-ring: #7c3aed; /* Accent (Primary Action, Highlights): #7C3AED */
+}
+
+@theme inline {
+  --font-sans: var(--font-jakarta);
+  --font-mono: var(--font-geist-mono);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  /* Added border and input color definitions for Tailwind */
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    /* Changed outline color from ring/50 to a darker gray to match the dark theme */
+    @apply outline-[#1f2937]/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
